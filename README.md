@@ -3,9 +3,12 @@
 ### Special thanks to [cmehay](https://github.com/cmehay/docker-tor-hidden-service) and to the [Wordpress project](https://hub.docker.com/_/wordpress/) for their projects which allowed me to built this one.
 
 ### About the script:
-In truth, very little was done apart from copying and pasting from the two above mentioned projects into a new docker-compose file and tailoring it a little to make the two projects works together. Be mindful that the "wordpress" mysql and the mysql root passwords are terrible and need to be changed to something a little more reliable than password if you actually want a site that goes live.
+In truth, very little was done apart from copying and pasting from the two above mentioned projects into a new docker-compose file and tailoring it a little to make the two projects works together. 
 
-## Usage:
+#### Variables
+
+Volumes: By default, docker-compose will create a ~/.keys directory with the hostname and private key.  You can change the local directory whatevery you want
+Passwords: Change the mysql root and user passwords to something other than the default passwords.  Make sure that MYSQL_PASSWORD and WORDPRESS_DB_PASSWORD are the same password as they are referring to the same thing.
 
 ```
 $ docker-compose up -d
