@@ -8,6 +8,7 @@ In truth, very little was done apart from copying and pasting from the two above
 #### Variables
 
 Volumes: By default, docker-compose will create a ~/.keys directory with the hostname and private key.  You can change the local directory whatevery you want
+
 Passwords: Change the mysql root and user passwords to something other than the default passwords.  Make sure that MYSQL_PASSWORD and WORDPRESS_DB_PASSWORD are the same password as they are referring to the same thing.
 
 ```
