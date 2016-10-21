@@ -1,5 +1,8 @@
 # tor-fied-wordpress
-## Intro: This is a docker-compose script for creating a simple wordpress hidden service onion.
+## Intro
+
+This is a docker-compose script for creating a simple wordpress hidden service onion.
+
 ### Special thanks to [cmehay](https://github.com/cmehay/docker-tor-hidden-service) and to the [Wordpress project](https://hub.docker.com/_/wordpress/) for their projects which allowed me to built this one.
 
 ### About the script:
@@ -21,3 +24,7 @@ Your new .onion hostname will be in ~/.keys/wordpress/hostname or you can run th
 ```
 $ docker exec -ti torfiedwordpress_tor_1 onions
 ```
+
+#### Other applications
+
+I've used this process to create several other hidden service applications such as tomcat, jboss, as well as more commonplace webservers like apache and nginx.
