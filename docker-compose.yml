@@ -5,7 +5,7 @@ services:
      image: goldy/tor-hidden-service:latest
      links:
           - wordpress
-
+     restart: always
 # Keep keys in volumes
      volumes:
           - "~/.keys/:/var/lib/tor/hidden_service/"
